@@ -1,0 +1,69 @@
+print("-------")
+
+import time
+
+Dinheiro = 1000
+
+Materia_De_reposição = 100
+Agua = 200
+Naves = 300
+Motores =  400
+ValorTotal = 0
+C = 0
+
+
+
+
+print("Bem-vindo a loja")
+
+print(f"Seu saldo é {Dinheiro}")
+
+C1 = int(input(""" 
+    1 ) Materia De reposição = 100
+    2 ) Agua = 200
+    3 ) Naves = 300
+    4 ) Motores = 400
+
+    Digite oque quer comprar: """))
+
+
+if C1 == 1:
+    
+    if Materia_De_reposição > Dinheiro:
+        print('Saldo Insuficiente')
+    
+    elif Materia_De_reposição < Dinheiro:
+        Dinheiro -= Materia_De_reposição
+        ValorTotal += 200
+        C += 1
+        print("Compra efetuada com sucesso")
+
+if C1 == 2:
+    if Agua > Dinheiro:
+        print('Saldo Insuficiente')
+    
+    elif Agua < Dinheiro:
+        Dinheiro -= Agua
+        ValorTotal += 200
+        C += 1
+        print("Compra efetuada com sucesso")
+
+if C1 == 3:
+        if Naves > Dinheiro:
+            print("Saldo insuficiente ")
+    
+elif Naves < Dinheiro:
+    Naves -= Dinheiro
+    ValorTotal += 300
+    C += 1
+    print("Compra efetuada com sucesso")
+
+if C1 == 4:
+    if Motores > Dinheiro:
+        print("Saldo insuficiente ")
+    
+    elif Motores < Dinheiro:
+        Motores -= Dinheiro
+        C += 1
+        ValorTotal + 400
+        print("Compra efetuada com sucesso")
