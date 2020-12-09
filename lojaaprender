@@ -11,9 +11,6 @@ Motores =  400
 ValorTotal = 0
 C = 0
 
-
-
-
 print("Bem-vindo a loja")
 
 print(f"Seu saldo é {Dinheiro}")
