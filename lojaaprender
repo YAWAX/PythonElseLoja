@@ -1,7 +1,5 @@
 print("-------")
 
-import time
-
 Dinheiro = 1000
 
 Materia_De_reposição = 100
