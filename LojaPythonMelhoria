@@ -1,1 +1,43 @@
+print("-------")
 
+Dinheiro = 1000
+Materia_De_reposição = 100
+Agua = Motores = Naves = 400
+print("Bem-vindo a loja\nSeu saldo é {Dinheiro}")
+
+
+def Calcular(Valor, Saldo):
+    if Valor > Saldo:
+        print("Saldo Insuficiente")
+
+    elif Valor < Saldo:
+        Saldo -= Valor
+        print(f"Compra Efetuada Com Sucesso, {Valor} Descontado Da Sua Conta!")
+
+
+while True:
+    C1 = int(input(""" 
+1 ) Materia De reposição = 100
+2 ) Agua = 200
+3 ) Naves = 300
+4 ) Motores = 400
+5 ) Sair
+
+> """))
+
+    if C1 == 1:
+        Calcular(Valor=Materia_De_reposição, Saldo=Dinheiro)
+
+    if C1 == 2:
+        Calcular(Valor=Agua, Saldo=Dinheiro)
+
+    if C1 == 3:
+        Calcular(Valor=Naves, Saldo=Dinheiro)
+
+    if C1 == 4:
+        Calcular(Valor=Motores, Saldo=Dinheiro)
+
+    if C1 == 5:
+        break
+
+print(f"Saldo Restante: {Dinheiro}")
